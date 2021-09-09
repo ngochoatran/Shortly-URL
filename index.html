@@ -1,31 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <input type="text" class = "input">
-  <button id="button">Get</button>
-  <ul id="shorten-links">
-    
-  </ul>
-  
-  <!-- <div class="attribution">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header part">
+      <img class="logo" src="images/logo.svg" />
+      <ul class="nav">
+        <li><a href="">Features</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Resources</a></li>
+      </ul>
+      <div class="person-account">
+        <a href="">Login</a>
+        <a href="" class="sign-up">Sign Up</a>
+      </div>
+      <div class="mobile-menu">
+        <ul class="mobile-nav">
+          <li><a href="">Features</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Resources</a></li>
+        </ul>
+        <div class="mobile-person-account">
+          <a href="">Login</a>
+          <a href="" class="sign-up">Sign Up</a>
+        </div>
+      </div>
+      <div class="menu-icon">
+        <i class="open fas fa-bars"></i>
+        <i class="close fas fa-times"></i>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-1 part">
+        <div class="introduction-1">
+          <h1>More than just shorter links</h1>
+          <p>
+            Build your brand’s recognition and get detailed insights on how your
+            links are performing.
+          </p>
+          <a href="" class="get-started-btn">Get Started</a>
+        </div>
+      </section>
+
+      <section class="section-2 part">
+        <div class="shorten-link">
+          <input
+            class="link-input"
+            type="text"
+            placeholder="Shorten a link here..."
+          />
+          <span class="message">Please add a link</span>
+          <button class="link-shorten-btn">Shorten It!</button>
+          
+        </div>
+
+        <div class="finished-links">
+          <!-- <div class="finished-item">
+            <p>
+              https://www.frontendmentor.io/fjdashfkashdfk/?<span>https://www.frontend</span>
+            </p>
+            <button class="copy">Copy</button>
+            <button class="copied">Copied</button>
+          </div> -->
+        </div>
+        <div class="load"><i class="fas fa-spinner fa-pulse"></i></div>
+        <div class="introduction-2">
+          <h2>Advanced Statistics</h2>
+          <p>
+            Track how your links are performing across the web with our advanced
+            statistics dashboard.
+          </p>
+        </div>
+
+        <div class="advertising">
+          <div class="brand advertising-item">
+            <h3>Brand Recognition</h3>
+            <p>
+              Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your
+              content.
+            </p>
+          </div>
+          <div class="record advertising-item">
+            <h3>Detailed Records</h3>
+            <p>
+              Gain insights into who is clicking your links. Knowing when and
+              where people engage with your content helps inform better
+              decisions.
+            </p>
+          </div>
+          <div class="custom advertising-item">
+            <h3>Fully Customizable</h3>
+            <p>
+              Improve brand awareness and content discoverability through
+              customizable links, supercharging audience engagement.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-3 part">
+        <h2>Boost your links today</h2>
+        <a href="" class="get-started-btn">Get Started</a>
+      </div>
+    </main>
+
+    <footer>
+      <h3>Shortly</h3>
+      <div class="link-group">
+        <div id="feature">
+          <h4>Features</h4>
+          <a href="">Link Shortening</a>
+          <a href="">Branded Links</a>
+          <a href="">Analytics</a>
+        </div>
+        <div id="resource">
+          <h4>Resources</h4>
+          <a href="">BLog</a>
+          <a href="">Developers</a>
+          <a href="">Support</a>
+        </div>
+        <div id="company">
+          <h4>Company</h4>
+          <a href="">About</a>
+          <a href="">Our Team</a>
+          <a href="">Careers</a>
+          <a href="">Contact</a>
+        </div>
+      </div>
+
+      <div class="social-group">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </footer>
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
