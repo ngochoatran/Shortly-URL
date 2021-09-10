@@ -392,6 +392,7 @@ footer .social-group i:hover {
     padding: 0 1.5rem;
     border-radius: 10px;
     animation: appear 0.6s;
+    -webkit-animation: appear 0.6s;
   }
   .header .mobile-menu .mobile-nav {
     padding: 1rem 0 2rem 0;
