@@ -171,14 +171,15 @@ p {
 }
 .section-2 .finished-links .finished-item p {
   flex-grow: 1;
+  white-space: nowrap;
   font-size: 18px;
-  display: flex;
-  justify-content: space-between;
   color: #232127;
+  overflow: hidden;
 }
-.section-2 .finished-links .finished-item p span {
+.section-2 .finished-links .finished-item span {
   color: #2acfcf;
   margin-right: 1.5rem;
+  margin-left: 1.5rem;
 }
 .section-2 .finished-links .finished-item button {
   height: 2.5rem;
@@ -189,6 +190,7 @@ p {
   font-size: 16px;
   font-weight: 700;
   border-radius: 5px;
+  flex-shrink: 0;
 }
 .section-2 .finished-links .finished-item button:hover {
   opacity: 0.7;
@@ -196,6 +198,12 @@ p {
 .section-2 .finished-links .finished-item .copied {
   background-color: #3b3054;
   display: none;
+}
+.section-2 .finished-links .copy-active .copy {
+  display: none;
+}
+.section-2 .finished-links .copy-active .copied {
+  display: inline-block;
 }
 .section-2 .load {
   text-align: center;
@@ -481,28 +489,18 @@ footer .social-group i:hover {
   .section-2 .finished-links .finished-item {
     margin-top: 1.5rem;
     flex-direction: column;
-    padding: 1rem;
     align-items: flex-start;
-    position: relative;
-  }
-  .section-2 .finished-links .finished-item::before {
-    content: "";
-    left: 0;
-    top: 3.2rem;
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: #bfbfbf;
+    padding: 1rem;
   }
   .section-2 .finished-links .finished-item p {
     max-width: 100%;
-    flex-direction: column;
-    justify-content: initial;
     overflow: hidden;
     font-size: 16px;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #bfbfbf;
   }
-  .section-2 .finished-links .finished-item p span {
-    margin: 1.5rem 0 0.5rem;
+  .section-2 .finished-links .finished-item span {
+    margin: 0.5rem 0;
   }
   .section-2 .finished-links .finished-item button {
     width: 100%;

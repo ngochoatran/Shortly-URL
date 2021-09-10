@@ -172,17 +172,18 @@ p{
             border-radius: 5px;
             align-items: center;
             margin-top: 1rem;
+            
             p{
                 flex-grow: 1;
+                white-space: nowrap;
                 font-size: 18px;
-                display: flex;
-                justify-content: space-between;
-                
                 color:$Very-Dark-Violet;
-                span{
-                    color:$Cyan;
-                    margin-right: 1.5rem;
-                }
+                overflow: hidden;
+            }
+            span{
+                color:$Cyan;
+                margin-right: 1.5rem;
+                margin-left: 1.5rem;
             }
             button{
                 height: 2.5rem;
@@ -196,12 +197,23 @@ p{
                 &:hover{
                     opacity: 0.7;
                 }
+                flex-shrink: 0;
             }
             .copied{
                 background-color: $Dark-Violet;
                 display: none;
             }
+
         }
+        .copy-active{
+            .copy{
+                display: none;
+            }
+            .copied{
+                display: inline-block;
+            }
+        }
+        
     }
     .load{
         text-align: center;
@@ -488,28 +500,19 @@ footer{
             .finished-item{
                 margin-top: 1.5rem;
                 flex-direction: column;
-                padding:1rem;
                 align-items: flex-start; 
-                position: relative;
-                &::before{
-                    content: "";
-                    left: 0;
-                    top:3.2rem;
-                    position: absolute;
-                    width: 100%;
-                    height: 1px;
-                    background-color: $Gray;
-                }
+                padding:1rem;
                 p{
                     max-width: 100%;
-                    flex-direction: column;
-                    justify-content: initial;
                     overflow: hidden;
                     font-size: 16px;
-                    span{
-                        margin: 1.5rem 0 0.5rem;
-                    }
+                    padding-bottom:0.5rem;
+                    border-bottom: 1px solid $Gray;
                 }
+                span{
+                    margin: 0.5rem 0;
+                }
+            
                 button{
                     width: 100%;
                 }
