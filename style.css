@@ -315,6 +315,7 @@ footer {
   padding: 3rem 10%;
   background-color: #232127;
   display: flex;
+  position: relative;
 }
 footer h3 {
   color: white;
