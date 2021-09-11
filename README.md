@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [soution](https://github.com/koalalikecode/FrontendMentor-Shortly-URL-shortening-API-Challenge)
-- Live Site URL: [live site](https://your-live-site-url.com)
+- Live Site URL: [live site](https://koalalikecode.github.io/FrontendMentor-Shortly-URL-shortening-API-Challenge/)
 
 ## My process
 
