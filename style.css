@@ -22,7 +22,7 @@ a {
   color: #9e9aa7;
   text-decoration: none;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
 }
 a:hover {
   color: #35323e;
@@ -65,7 +65,7 @@ p {
 }
 
 .get-started-btn {
-  font-size: 18px;
+  font-size: 20px;
   padding: 0.6rem 2rem;
   color: white;
   background-color: #2acfcf;
@@ -80,21 +80,21 @@ p {
 .section-1 {
   background-image: url(images/illustration-working.svg);
   background-repeat: no-repeat;
-  background-position: 115% 10%;
-  background-size: 50vw;
+  background-position: 115% 15%;
+  background-size: 45vw;
   padding-bottom: 6rem;
 }
 .section-1 .introduction-1 {
-  max-width: 500px;
+  max-width: 550px;
   padding: 6rem 0;
 }
 .section-1 .introduction-1 h1 {
   line-height: 1.1;
-  font-size: 4rem;
+  font-size: 4.5rem;
   color: #35323e;
 }
 .section-1 .introduction-1 p {
-  font-size: 18px;
+  font-size: 20px;
   width: 90%;
 }
 
@@ -119,7 +119,7 @@ p {
 .section-2 .shorten-link .link-input {
   flex-grow: 1;
   height: 3.5rem;
-  font-size: 18px;
+  font-size: 20px;
   padding-left: 2rem;
   border-radius: 10px;
   outline: none;
@@ -130,7 +130,7 @@ p {
   margin-left: 1rem;
   width: 10rem;
   border: none;
-  font-size: 18px;
+  font-size: 20px;
   border-radius: 10px;
   background-color: #2acfcf;
   color: white;
@@ -222,16 +222,17 @@ p {
   display: inline-block;
 }
 .section-2 .introduction-2 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #35323e;
 }
 .section-2 .introduction-2 p {
   max-width: 480px;
   margin: 10px auto 0;
+  font-size: 18px;
 }
 .section-2 .advertising {
   display: flex;
-  margin-top: 6rem;
+  margin-top: 6.5rem;
   justify-content: center;
   align-items: flex-start;
 }
@@ -239,7 +240,7 @@ p {
   padding: 4rem 1.5rem 2.5rem;
   background-color: white;
   border-radius: 5px;
-  max-width: 300px;
+  max-width: 315px;
   position: relative;
 }
 .section-2 .advertising .advertising-item:before {
@@ -253,11 +254,11 @@ p {
   background-color: #3b3054;
 }
 .section-2 .advertising .advertising-item h3 {
-  font-size: 20px;
+  font-size: 22px;
   color: #35323e;
 }
 .section-2 .advertising .advertising-item p {
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 12px;
 }
 .section-2 .advertising .brand::before {
@@ -304,7 +305,7 @@ p {
   align-items: center;
 }
 .section-3 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: white;
 }
 .section-3 a {
@@ -319,7 +320,7 @@ footer {
 }
 footer h3 {
   color: white;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
 }
 footer .link-group {
@@ -332,13 +333,13 @@ footer .link-group > div {
 }
 footer .link-group h4 {
   color: white;
-  font-size: 13px;
+  font-size: 14px;
   margin: 0.8rem 0 0.5rem;
 }
 footer .link-group a {
   display: block;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 0.5rem;
 }
 footer .link-group a:hover {
@@ -444,6 +445,10 @@ footer .social-group i:hover {
     display: none;
   }
 
+  .get-started-btn {
+    font-size: 18px;
+  }
+
   .section-1 {
     margin-top: 81px;
     background-size: 140%;
@@ -459,6 +464,7 @@ footer .social-group i:hover {
     font-size: 2.5rem;
   }
   .section-1 .introduction-1 p {
+    font-size: 16px;
     margin-top: 1rem;
     width: initial;
   }
@@ -474,11 +480,13 @@ footer .social-group i:hover {
     width: 100%;
     height: 3rem;
     padding-left: 1rem;
+    font-size: 18px;
   }
   .section-2 .shorten-link .link-shorten-btn {
     height: 3rem;
     width: 100%;
     margin: 1rem 0 0;
+    font-size: 18px;
   }
   .section-2 .shorten-link .message {
     position: static;
@@ -513,6 +521,9 @@ footer .social-group i:hover {
   .section-2 .introduction-2 h2 {
     font-size: 26px;
   }
+  .section-2 .introduction-2 p {
+    font-size: 16px;
+  }
   .section-2 .advertising {
     flex-direction: column;
     margin-top: 0;
@@ -522,6 +533,12 @@ footer .social-group i:hover {
     margin: 6rem 0 0;
     max-width: 100%;
     text-align: center;
+  }
+  .section-2 .advertising .advertising-item h3 {
+    font-size: 20px;
+  }
+  .section-2 .advertising .advertising-item p {
+    font-size: 13px;
   }
   .section-2 .advertising .advertising-item::before {
     left: 50%;
@@ -559,6 +576,10 @@ footer .social-group i:hover {
   }
   footer .link-group > div h4 {
     margin-bottom: 1rem;
+    font-size: 13px;
+  }
+  footer .link-group > div a {
+    font-size: 13px;
   }
 }
 

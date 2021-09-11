@@ -27,7 +27,7 @@ a{
     color: $Grayish-Violet;
     text-decoration: none;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     &:hover{
         color: $Very-Dark-Blue
     }
@@ -71,7 +71,7 @@ p{
 }
 
 .get-started-btn{
-    font-size:18px;
+    font-size:20px;
     padding: 0.6rem 2rem;
     color:white;
     background-color: $Cyan;
@@ -85,19 +85,19 @@ p{
 .section-1{
     background-image: url(images/illustration-working.svg);
     background-repeat: no-repeat;
-    background-position: 115% 10%;
-    background-size: 50vw;
+    background-position: 115% 15%;
+    background-size: 45vw;
     padding-bottom: 6rem;
     .introduction-1{
-        max-width: 500px;
+        max-width: 550px;
         padding: 6rem 0;
         h1{
             line-height: 1.1;
-            font-size: 4rem;
+            font-size: 4.5rem;
             color: $Very-Dark-Blue
         }
         p{
-            font-size:18px;
+            font-size:20px;
             width: 90%;
         }
     }
@@ -121,7 +121,7 @@ p{
         .link-input{
             flex-grow: 1;
             height: 3.5rem;
-            font-size: 18px;
+            font-size: 20px;
             padding-left: 2rem;
             border-radius: 10px;
             outline: none;
@@ -132,7 +132,7 @@ p{
             margin-left: 1rem;
             width: 10rem;
             border:none;
-            font-size: 18px;
+            font-size: 20px;
             border-radius: 10px;
             background-color: $Cyan;
             color:white;
@@ -231,24 +231,25 @@ p{
         text-align: center;
         display: inline-block;
         h2{
-            font-size: 2rem;
+            font-size: 2.5rem;
             color:$Very-Dark-Blue;
         }
         p{
             max-width: 480px;
             margin: 10px auto 0;
+            font-size: 18px;
         }
     }
     .advertising{
         display: flex;
-        margin-top: 6rem;
+        margin-top: 6.5rem;
         justify-content: center;
         align-items: flex-start;
         .advertising-item{
             padding: 4rem 1.5rem 2.5rem;
             background-color: white;
             border-radius: 5px;
-            max-width: 300px;
+            max-width: 315px;
             position: relative;
             &:before{
                 content: "";
@@ -261,11 +262,11 @@ p{
                 background-color: $Dark-Violet;
             }
             h3{
-                font-size: 20px;
+                font-size: 22px;
                 color:$Very-Dark-Blue
             }
             p{
-                font-size: 13px;
+                font-size: 14px;
                 margin-top: 12px;
             }
         }
@@ -316,7 +317,7 @@ p{
     flex-direction: column;
     align-items: center;
     h2{
-        font-size: 2rem;
+        font-size: 2.5rem;
         color:white;
     }
     a{
@@ -327,9 +328,10 @@ footer{
     padding: 3rem 10%;
     background-color: $Very-Dark-Violet;
     display:flex;
+    position: relative;
     h3{
         color: white;
-        font-size: 28px;
+        font-size: 30px;
         font-weight: 700;
     }
     .link-group{
@@ -341,13 +343,13 @@ footer{
         }
         h4{
             color: white;
-            font-size:13px;
+            font-size:14px;
             margin: 0.8rem 0 0.5rem;
         }
         a{
             display: block;
             font-weight: 500;
-            font-size: 13px;
+            font-size: 14px;
             margin-top: 0.5rem;
             &:hover{
                 color:$Cyan;
@@ -456,6 +458,9 @@ footer{
             }
         }
     }
+    .get-started-btn{
+        font-size: 18px;
+    }
     .section-1{
         margin-top: 81px;
         background-size: 140%;
@@ -469,10 +474,12 @@ footer{
                 font-size: 2.5rem;
             }
             p{
+                font-size: 16px;
                 margin-top: 1rem;
                width: initial;
             }
         }
+        
     }.section-2{
         .shorten-link{
             flex-direction: column;
@@ -484,11 +491,13 @@ footer{
                 width: 100%;
                 height: 3rem;
                 padding-left: 1rem;
+                font-size: 18px;
             }
             .link-shorten-btn{
                 height: 3rem;
                 width: 100%;
                 margin: 1rem 0 0;
+                font-size: 18px;
             }
             .message{
                 position: static;
@@ -525,6 +534,9 @@ footer{
             h2{
                 font-size: 26px;
             }
+            p{
+                font-size: 16px;
+            }
         }
         .advertising{
             flex-direction: column;
@@ -534,6 +546,12 @@ footer{
                 margin: 6rem 0 0;
                 max-width: 100%;
                 text-align: center;
+                h3{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 13px;
+                }
                 &::before{
                     left:50%;
                     transform:translate(-50%, -50%)
@@ -571,6 +589,10 @@ footer{
                 margin: 0 0 1.5rem;
                 h4{
                     margin-bottom: 1rem;
+                    font-size: 13px;
+                }
+                a{
+                    font-size: 13px;
                 }
             }
         }
