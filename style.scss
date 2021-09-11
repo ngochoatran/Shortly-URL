@@ -37,7 +37,7 @@ p{
     color:$Grayish-Violet;
 }
 .header{
-    padding: 2rem 10%;
+    padding: 3rem 10%;
     display:flex;
     align-items: center;
     background-color: white;
@@ -85,9 +85,9 @@ p{
 .section-1{
     background-image: url(images/illustration-working.svg);
     background-repeat: no-repeat;
-    background-position: 115% 15%;
-    background-size: 45vw;
-    padding-bottom: 6rem;
+    background-position: 115% 10%;
+    background-size: 50vw;
+    padding-bottom: 9rem;
     .introduction-1{
         max-width: 550px;
         padding: 6rem 0;
@@ -246,16 +246,16 @@ p{
         justify-content: center;
         align-items: flex-start;
         .advertising-item{
-            padding: 4rem 1.5rem 2.5rem;
+            padding: 4.5rem 1.8rem 2.5rem;
             background-color: white;
             border-radius: 5px;
-            max-width: 315px;
+            max-width: 335px;
             position: relative;
             &:before{
                 content: "";
                 position: absolute;
-                height: 5rem;
-                width: 5rem;
+                height: 5.5rem;
+                width: 5.5rem;
                 top: 0;
                 transform:translateY(-50%);
                 border-radius: 50%;
@@ -266,7 +266,7 @@ p{
                 color:$Very-Dark-Blue
             }
             p{
-                font-size: 14px;
+                font-size: 15px;
                 margin-top: 12px;
             }
         }
@@ -288,7 +288,7 @@ p{
             }
         }
         .record{
-            margin: 2.5rem 1.5rem 0;
+            margin: 2.5rem 2rem 0;
             &::before{
                 background-image: url(images/icon-detailed-records.svg);
                 background-repeat: no-repeat;
@@ -311,8 +311,7 @@ p{
     background-image: url(images/bg-boost-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 4rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,7 +324,7 @@ p{
     }
 }
 footer{
-    padding: 3rem 10%;
+    padding: 4rem 10%;
     background-color: $Very-Dark-Violet;
     display:flex;
     position: relative;
