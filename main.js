@@ -101,7 +101,7 @@ function start() {
         });
       })
       .catch(function (error) {
-        alert('Please try again!');
+        alert("Please try again!");
       });
   };
 }
