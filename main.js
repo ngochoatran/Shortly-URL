@@ -99,7 +99,10 @@ function start() {
         shorten_links.forEach(function (shorten_link) {
           copyBtnEvent(shorten_link);
         });
+      })
+      .catch(function (error) {
+        alert('Please try again!');
       });
   };
 }
-start()
+start();
