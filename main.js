@@ -67,7 +67,6 @@ function start() {
   link_input.oninput = function () {
     link_enter_block.classList.remove("invalid");
   };
-  console.log(process.env.API_KEY);
   // render link to the screen
   link_shorten_btn.onclick = function () {
     const data = {
