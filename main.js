@@ -6,7 +6,7 @@ const link_input = document.querySelector(".link-input");
 const link_shorten_btn = document.querySelector(".link-shorten-btn");
 const shorten_links_group = document.querySelector(".finished-links");
 const load_icon = document.querySelector(".load");
-var headLink = "https://api.shrtco.de/v2/shorten?url=";
+var headLink = "https://api.short.io/links/public";
 var link_storage = sessionStorage.getItem("link-storage");
 //Check the storge and declare the html variable
 if (link_storage) {
@@ -67,19 +67,30 @@ function start() {
   link_input.oninput = function () {
     link_enter_block.classList.remove("invalid");
   };
-
+  console.log(process.env.API_KEY);
   // render link to the screen
   link_shorten_btn.onclick = function () {
-    headLink += link_input.value;
+    const data = {
+      domain: "link.gdsc.vn",
+      originalURL: link_input.value,
+    };
     load_icon.classList.add("loading");
-    fetch(headLink)
+    fetch(headLink, {
+      method: "post",
+      headers: {
+        accept: "application/json",
+        "Content-Type": "application/json",
+        authorization: "pk_f3UI6XIng3jpZuoO",
+      },
+      body: JSON.stringify(data),
+    })
       //Process the api
       .then(function (response) {
         return response.json();
       })
       // Render link to the screen after having json
-      .then(function (posts) {
-        var shortenLink = posts.result.short_link;
+      .then(function (data) {
+        var shortenLink = data.shortURL;
         html += `<div class="finished-item">
             <p>
               ${link_input.value}
