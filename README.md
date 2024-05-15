@@ -28,7 +28,6 @@ Users should be able to:
 ### Screenshot
 
 ![Destop](./design/desktop-screenshot.png)
-![Mobile](./design/Mobile-screenshot.png)
 
 ## My process
 
