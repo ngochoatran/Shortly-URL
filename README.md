@@ -30,11 +30,6 @@ Users should be able to:
 ![Destop](./design/desktop-screenshot.png)
 ![Mobile](./design/Mobile-screenshot.png)
 
-### Links
-
-- Solution URL: [soution](https://github.com/koalalikecode/FrontendMentor-Shortly-URL-shortening-API-Challenge)
-- Live Site URL: [live site](https://koalalikecode.github.io/FrontendMentor-Shortly-URL-shortening-API-Challenge/)
-
 ## My process
 
 ### Built with
@@ -46,4 +41,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@koalalikecode](https://www.frontendmentor.io/profile/koalalikecode)
+ - [@ngochoatran](https://github.com/ngochoatran)
